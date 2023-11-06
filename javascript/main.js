@@ -13,14 +13,8 @@ invio.addEventListener("click",function(){
  })
 
 
- function reverse (){
+ function Palindroma (){
     
-    for (let i = words.length; i >= 0; i--) {
-        const Ncharacter = words[i];
-        console.log(Ncharacter)
-    }
+    
 
  }
-/* const x="ciao"
-let y=x[2]
-console.log(y) */

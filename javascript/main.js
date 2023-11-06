@@ -5,27 +5,31 @@ let output2=document.getElementById("output2");
 
 invio.addEventListener("click",function(){
     
+    
     let words=input.value;
     output.innerHTML=words;
-
-    let i = words.length
+    
+    let i = words.length-1
     while ( i >= 0 ) {
         let Ncharacter = words[i];
         i--;
         console.log(Ncharacter)
         output2.innerHTML+=Ncharacter
     }   
-
-/*     function Palindroma (){
+    function Palindroma (output, output2){
+        let valid=(output2.innerHTML==output.innerHTML)
         
-        if (output==output2) {
-            console.log("è palindroma")
+        if (valid==true){
+            console.log ("è palindroma")
+        } 
+        
+        else if(valid==false) {
+            console.log ("non è palindroma")
         }
-        else(
-            console.log("Non è palindroma")
-        )
-        
-     }  */
+        return valid;
+     } 
+    Palindroma (output, output2)
+
  })
 
 
